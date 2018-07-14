@@ -297,8 +297,8 @@ type Task struct{
 
 func main(){
 	firstTask := Task{
-		ID: 1,
-		Name: "First Task",
+		ID:     1,
+		Name:   "First Task",
 	}
 	
 	take.Insert("table", firstTask, databaseSession)
@@ -326,13 +326,13 @@ type Task struct{
 
 func main(){
 	firstTask := Task{
-		ID: 1,
-		Name: "First Task",
+		ID:     1,
+		Name:   "First Task",
 	}
 	
 	secondTask := Task{
-		ID: 2,
-		Name: "Second Task",
+		ID:     2,
+		Name:   "Second Task",
 	}
 	
 	take.Insert("table", []interface{}{firstTask, secondTask}, databaseSession)
@@ -360,8 +360,8 @@ type Task struct{
 
 func main(){
 	firstTask := Task{
-		ID: 1,
-		Name: "First Task",
+		ID:     1,
+		Name:   "First Task",
 	}
 	
 	take.InsertOrUpdate("table", firstTask, databaseSession)
@@ -389,13 +389,13 @@ type Task struct{
 
 func main(){
 	firstTask := Task{
-		ID: 1,
-		Name: "First Task",
+		ID:     1,
+		Name:   "First Task",
 	}
 	
 	secondTask := Task{
-		ID: 2,
-		Name: "Second Task",
+		ID:     2,
+		Name:   "Second Task",
 	}
 	
 	take.InsertOrUpdateMany("table", []interface{}{firstTask, secondTask}, databaseSession)
@@ -425,8 +425,8 @@ type Task struct{
 
 func main(){
 	firstTask := Task{
-		ID: 1,
-		Name: "First Task updated",
+		ID:     1,
+		Name:   "First Task updated",
 	}
 	
 	take.Update("table", firstTask.ID, firstTask, databaseSession)
