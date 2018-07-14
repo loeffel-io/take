@@ -15,7 +15,9 @@
         - [Check if Index exists](https://github.com/loeffel-io/take#check-if-index-exists)
     - [Table](https://github.com/loeffel-io/take#component-table)
         - [Create Tables](https://github.com/loeffel-io/take#create-tables)
-        - [Check if Table exists](https://github.com/loeffel-io/take#check-if-table-exists)        
+        - [Check if Table exists](https://github.com/loeffel-io/take#check-if-table-exists)
+    - [User](https://github.com/loeffel-io/take#component-user)
+        - [Setup user](https://github.com/loeffel-io/take#setup-user)                
 
 ## Component: Connect
 
