@@ -1,6 +1,6 @@
 # take
 
-Simple RethinkDB ORM based on [gorethink](https://github.com/GoRethink/gorethink)
+[WIP] Simple RethinkDB ORM based on [gorethink](https://github.com/GoRethink/gorethink)
 
 - Components
     - [Connect](https://github.com/loeffel-io/take#component-connect)
