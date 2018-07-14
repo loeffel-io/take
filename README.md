@@ -295,7 +295,7 @@ func main(){
 		Name: "First Task",
 	}
 	
-	take.Insert("tasks", firstTask, databaseSession)
+	take.Insert("table", firstTask, databaseSession)
 }
 ```
 
@@ -329,7 +329,7 @@ func main(){
 		Name: "Second Task",
 	}
 	
-	take.Insert("tasks", []interface{}{firstTask, secondTask}, databaseSession)
+	take.Insert("table", []interface{}{firstTask, secondTask}, databaseSession)
 }
 ```
 
@@ -358,7 +358,7 @@ func main(){
 		Name: "First Task",
 	}
 	
-	take.InsertOrUpdate("tasks", firstTask, databaseSession)
+	take.InsertOrUpdate("table", firstTask, databaseSession)
 }
 ```
 
@@ -392,7 +392,7 @@ func main(){
 		Name: "Second Task",
 	}
 	
-	take.InsertOrUpdateMany("tasks", []interface{}{firstTask, secondTask}, databaseSession)
+	take.InsertOrUpdateMany("table", []interface{}{firstTask, secondTask}, databaseSession)
 }
 ```
 
