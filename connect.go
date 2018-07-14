@@ -1,11 +1,11 @@
 package take
 
 import (
-	"log"
 	"crypto/tls"
-	r "gopkg.in/gorethink/gorethink.v4"
 	"github.com/getsentry/raven-go"
 	"github.com/loeffel-io/helper"
+	r "gopkg.in/gorethink/gorethink.v4"
+	"log"
 )
 
 type Connection struct {

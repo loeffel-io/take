@@ -1,9 +1,9 @@
 package take
 
 import (
-	"log"
-	r "gopkg.in/gorethink/gorethink.v4"
 	"github.com/getsentry/raven-go"
+	r "gopkg.in/gorethink/gorethink.v4"
+	"log"
 )
 
 func DatabaseExists(table string, session *r.Session) bool {

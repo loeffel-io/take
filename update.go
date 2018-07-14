@@ -1,9 +1,9 @@
 package take
 
 import (
-	"log"
-	r "gopkg.in/gorethink/gorethink.v4"
 	"github.com/getsentry/raven-go"
+	r "gopkg.in/gorethink/gorethink.v4"
+	"log"
 )
 
 func Update(table string, id interface{}, data interface{}, session *r.Session) interface{} {

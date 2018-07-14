@@ -1,9 +1,9 @@
 package take
 
 import (
-	"log"
-	r "gopkg.in/gorethink/gorethink.v4"
 	"github.com/getsentry/raven-go"
+	r "gopkg.in/gorethink/gorethink.v4"
+	"log"
 )
 
 type User struct {
