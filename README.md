@@ -86,7 +86,7 @@ func init(){
 
 ### Create Database
 
-Create a database if not exists
+Create database if not exists
 
 ```go
 package main
@@ -104,8 +104,6 @@ func main(){
 ```
 
 ### Check if Database exists
-
-Create a database if not exists
 
 ```go
 package main
@@ -127,6 +125,52 @@ func main(){
     }
     
     log.Println("Database not exists")
+}
+```
+
+## Component: Index
+
+### Create Index
+
+Create index if not exists
+
+```go
+package main
+
+import (
+	r "gopkg.in/gorethink/gorethink.v4"
+	"github.com/loeffel-io/take"
+)
+
+var databaseSession *r.Session
+
+func main(){
+    take.IndexCreate("table", "index", "field", databaseSession)
+}
+```
+
+### Check if Index exists
+
+```go
+package main
+
+import (
+	"log"
+	r "gopkg.in/gorethink/gorethink.v4"
+	"github.com/loeffel-io/take"
+)
+
+var databaseSession *r.Session
+
+func main(){
+    exists := take.IndexExists("table", "index", databaseSession)
+    
+    if exists{
+    	log.Println("Index exists")
+    	return
+    }
+    
+    log.Println("Index not exists")
 }
 ```
 

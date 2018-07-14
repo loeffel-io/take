@@ -6,7 +6,7 @@ import (
 	"log"
 )
 
-func SetupIndex(table string, indexName string, indexField string, session *r.Session) {
+func IndexCreate(table string, indexName string, indexField string, session *r.Session) {
 	if IndexExists(table, indexName, session) {
 		return
 	}
