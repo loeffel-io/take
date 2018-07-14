@@ -7,10 +7,10 @@ Simple RethinkDB ORM based on [gorethink](https://github.com/GoRethink/gorethink
         - [Basic Connection](https://github.com/loeffel-io/take#basic-connection)
         - [Connection Pool](https://github.com/loeffel-io/take#connection-pool)
         - [Secure Connection](https://github.com/loeffel-io/take#secure-connection)
-    - Database
+    - [Database](https://github.com/loeffel-io/take#component-database)
         - [Create Database](https://github.com/loeffel-io/take#create-database)
         - [Check if Database exists](https://github.com/loeffel-io/take#check-if-database-exists)
-    - Index
+    - [Index](https://github.com/loeffel-io/take#component-index)
         - [Create Index](https://github.com/loeffel-io/take#create-index)
         - [Check if Index exists](https://github.com/loeffel-io/take#check-if-index-exists)
 
