@@ -2,7 +2,7 @@
 
 Simple RethinkDB ORM based on [gorethink](https://github.com/GoRethink/gorethink)
 
-## Examples
+## Component: Connect
 
 ### Basic Connection
 
@@ -79,6 +79,27 @@ func init(){
         AuthKey:    os.Getenv("RETHINKDB_AUTHKEY"),
         CertPath:   os.Getenv("RETHINKDB_CERT_PATH"),
     })
+}
+```
+
+## Component: Database
+
+### Create Database
+
+Create a database if not exists
+
+```go
+package main
+
+import (
+	r "gopkg.in/gorethink/gorethink.v4"
+	"github.com/loeffel-io/take"
+)
+
+var databaseSession *r.Session
+
+func init(){
+    take.DatabaseCreate("test", databaseSession)
 }
 ```
 
