@@ -55,6 +55,8 @@ func init(){
 
 ### Secure Connection
 
+e.g.: [compose.io](https://compose.io)
+
 ```go
 package main
 
