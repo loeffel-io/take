@@ -98,8 +98,35 @@ import (
 
 var databaseSession *r.Session
 
-func init(){
+func main(){
     take.DatabaseCreate("test", databaseSession)
+}
+```
+
+### Check if Database exists
+
+Create a database if not exists
+
+```go
+package main
+
+import (
+	"log"
+	r "gopkg.in/gorethink/gorethink.v4"
+	"github.com/loeffel-io/take"
+)
+
+var databaseSession *r.Session
+
+func main(){
+    exists := take.DatabaseExists("test", databaseSession)
+    
+    if exists{
+    	log.Println("Database exists")
+    	return
+    }
+    
+    log.Println("Database not exists")
 }
 ```
 
