@@ -235,6 +235,37 @@ func main(){
 }
 ```
 
+## Component: User
+
+### Setup user
+
+Create or update user and set user permissions for the current database 
+
+```go
+package main
+
+import (
+	r "gopkg.in/gorethink/gorethink.v4"
+	"github.com/loeffel-io/take"
+)
+
+var databaseSession *r.Session
+
+func main(){
+	user := take.User{
+        ID:             "username",
+        Password:       "password",
+        Permissions:    take.UserPermissions{
+            Read:   true,
+            Write:  false,
+            Config: false,
+        },
+    }
+	
+    take.SetupUser(user, databaseSession)
+}
+```
+
 ## Sentry support
 
 This package supports [sentry.io](https://sentry.io) real time error reporting.
