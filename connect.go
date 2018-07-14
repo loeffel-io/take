@@ -1,4 +1,3 @@
-// test 
 package take
 
 import (
