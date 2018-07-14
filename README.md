@@ -1,5 +1,6 @@
 # take
-Simple RethinkDB ORM
+
+Simple RethinkDB ORM based on [gorethink](https://github.com/GoRethink/gorethink)
 
 ## Examples
 
