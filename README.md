@@ -268,6 +268,134 @@ func main(){
 }
 ```
 
+## Component: Insert
+
+### Insert
+
+Insert single object
+
+```go
+package main
+
+import (
+	r "gopkg.in/gorethink/gorethink.v4"
+	"github.com/loeffel-io/take"
+)
+
+var databaseSession *r.Session
+
+type Task struct{
+	ID      int     `gorethink:"id"`
+	Name    string  `gorethink:"name"`
+}
+
+func main(){
+	firstTask := Task{
+		ID: 1,
+		Name: "First Task",
+	}
+	
+	take.Insert("tasks", firstTask, databaseSession)
+}
+```
+
+### InsertMany
+
+Insert multiple objects
+
+```go
+package main
+
+import (
+	r "gopkg.in/gorethink/gorethink.v4"
+	"github.com/loeffel-io/take"
+)
+
+var databaseSession *r.Session
+
+type Task struct{
+	ID      int     `gorethink:"id"`
+	Name    string  `gorethink:"name"`
+}
+
+func main(){
+	firstTask := Task{
+		ID: 1,
+		Name: "First Task",
+	}
+	
+	secondTask := Task{
+		ID: 2,
+		Name: "Second Task",
+	}
+	
+	take.Insert("tasks", []interface{}{firstTask, secondTask}, databaseSession)
+}
+```
+
+### InsertOrUpdate
+
+Insert single object or update object if exists
+
+```go
+package main
+
+import (
+	r "gopkg.in/gorethink/gorethink.v4"
+	"github.com/loeffel-io/take"
+)
+
+var databaseSession *r.Session
+
+type Task struct{
+	ID      int     `gorethink:"id"`
+	Name    string  `gorethink:"name"`
+}
+
+func main(){
+	firstTask := Task{
+		ID: 1,
+		Name: "First Task",
+	}
+	
+	take.InsertOrUpdate("tasks", firstTask, databaseSession)
+}
+```
+
+### InsertOrUpdateMany
+
+Insert multiple object or update objects if exists
+
+```go
+package main
+
+import (
+	r "gopkg.in/gorethink/gorethink.v4"
+	"github.com/loeffel-io/take"
+)
+
+var databaseSession *r.Session
+
+type Task struct{
+	ID      int     `gorethink:"id"`
+	Name    string  `gorethink:"name"`
+}
+
+func main(){
+	firstTask := Task{
+		ID: 1,
+		Name: "First Task",
+	}
+	
+	secondTask := Task{
+		ID: 2,
+		Name: "Second Task",
+	}
+	
+	take.InsertOrUpdateMany("tasks", []interface{}{firstTask, secondTask}, databaseSession)
+}
+```
+
 ## Sentry support
 
 This package supports [sentry.io](https://sentry.io) real time error reporting.
