@@ -13,6 +13,9 @@
     - [Index](https://github.com/loeffel-io/take#component-index)
         - [Create Index](https://github.com/loeffel-io/take#create-index)
         - [Check if Index exists](https://github.com/loeffel-io/take#check-if-index-exists)
+    - [Table](https://github.com/loeffel-io/take#component-table)
+        - [Create Table](https://github.com/loeffel-io/take#create-table)
+        - [Check if Table exists](https://github.com/loeffel-io/take#check-if-table-exists)        
 
 ## Component: Connect
 
@@ -183,6 +186,52 @@ func main(){
     }
     
     log.Println("Index not exists")
+}
+```
+
+## Component: Table
+
+### Create Tables
+
+Create tables if not exists
+
+```go
+package main
+
+import (
+	r "gopkg.in/gorethink/gorethink.v4"
+	"github.com/loeffel-io/take"
+)
+
+var databaseSession *r.Session
+
+func main(){
+    take.TablesCreate([]string{"table1", "table2"}, databaseSession)
+}
+```
+
+### Check if Table exists
+
+```go
+package main
+
+import (
+	"log"
+	r "gopkg.in/gorethink/gorethink.v4"
+	"github.com/loeffel-io/take"
+)
+
+var databaseSession *r.Session
+
+func main(){
+    exists := take.TableExists("table", databaseSession)
+    
+    if exists{
+    	log.Println("Table exists")
+    	return
+    }
+    
+    log.Println("Table not exists")
 }
 ```
 
