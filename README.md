@@ -1,5 +1,7 @@
 # take
 
+[![Go Report Card](https://goreportcard.com/badge/github.com/loeffel-io/take)](https://goreportcard.com/report/github.com/loeffel-io/take)
+
 [WIP] Simple [RethinkDB](https://www.rethinkdb.com/) ORM based on [gorethink](https://github.com/GoRethink/gorethink)
 
 - Components
