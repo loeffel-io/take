@@ -48,7 +48,7 @@ func init(){
         Username:   os.Getenv("RETHINKDB_USERNAME"),
         Password:   os.Getenv("RETHINKDB_PASSWORD"),
         InitialCap: 10,
-        MaxOpen: 10,
+        MaxOpen:    10,
     })
 }
 ```
