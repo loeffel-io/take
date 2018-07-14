@@ -22,7 +22,8 @@
         - [Insert single object](https://github.com/loeffel-io/take#insert)
         - [Insert multiple objects](https://github.com/loeffel-io/take#insertmany)
         - [Insert or update single object](https://github.com/loeffel-io/take#insertorupdate)
-        - [Insert or update multiple objects](https://github.com/loeffel-io/take#insertorupdatemany)                    
+        - [Insert or update multiple objects](https://github.com/loeffel-io/take#insertorupdatemany)
+    - [Update](https://github.com/loeffel-io/take#component-update)                      
 
 ## Component: Connect
 
@@ -398,6 +399,37 @@ func main(){
 	}
 	
 	take.InsertOrUpdateMany("table", []interface{}{firstTask, secondTask}, databaseSession)
+}
+```
+
+## Component: Update
+
+### Update
+
+Update single object by id
+
+```go
+package main
+
+import (
+	r "gopkg.in/gorethink/gorethink.v4"
+	"github.com/loeffel-io/take"
+)
+
+var databaseSession *r.Session
+
+type Task struct{
+	ID      int     `gorethink:"id"`
+	Name    string  `gorethink:"name"`
+}
+
+func main(){
+	firstTask := Task{
+		ID: 1,
+		Name: "First Task updated",
+	}
+	
+	take.Update("table", firstTask.ID, firstTask, databaseSession)
 }
 ```
 

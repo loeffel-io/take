@@ -6,7 +6,7 @@ import (
 	"github.com/getsentry/raven-go"
 )
 
-func Update(table string, id string, data interface{}, session *r.Session) interface{} {
+func Update(table string, id interface{}, data interface{}, session *r.Session) interface{} {
 	err := r.Table(table).Get(id).Update(data).Exec(session)
 
 	if err != nil {
