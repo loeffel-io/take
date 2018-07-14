@@ -23,7 +23,8 @@
         - [Insert multiple objects](https://github.com/loeffel-io/take#insertmany)
         - [Insert or update single object](https://github.com/loeffel-io/take#insertorupdate)
         - [Insert or update multiple objects](https://github.com/loeffel-io/take#insertorupdatemany)
-    - [Update](https://github.com/loeffel-io/take#component-update)                      
+    - [Update](https://github.com/loeffel-io/take#component-update)
+        - [Update single object by id](https://github.com/loeffel-io/take#update)                      
 
 ## Component: Connect
 
