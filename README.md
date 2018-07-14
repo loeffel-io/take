@@ -17,7 +17,12 @@
         - [Create Tables](https://github.com/loeffel-io/take#create-tables)
         - [Check if Table exists](https://github.com/loeffel-io/take#check-if-table-exists)
     - [User](https://github.com/loeffel-io/take#component-user)
-        - [Setup user](https://github.com/loeffel-io/take#setup-user)                
+        - [Setup user](https://github.com/loeffel-io/take#setup-user)
+    - [Insert](https://github.com/loeffel-io/take#component-insert)
+        - [Insert single object](https://github.com/loeffel-io/take#insert)
+        - [Insert multiple objects](https://github.com/loeffel-io/take#insertmany)
+        - [Insert or update single object](https://github.com/loeffel-io/take#insertorupdate)
+        - [Insert or update multiple objects](https://github.com/loeffel-io/take#insertorupdatemany)                    
 
 ## Component: Connect
 
