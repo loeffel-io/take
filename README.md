@@ -6,7 +6,7 @@
 
 ![GoRethink Logo](https://raw.github.com/wiki/gorethink/gorethink/gopher-and-thinker-s.png "Golang Gopher and RethinkDB Thinker")
 
-- Components
+- **Components**
     - [Connect](https://github.com/loeffel-io/take#component-connect)
         - [Basic Connection](https://github.com/loeffel-io/take#basic-connection)
         - [Connection Pool](https://github.com/loeffel-io/take#connection-pool)
