@@ -4,6 +4,8 @@
 
 [WIP] Simple [RethinkDB](https://www.rethinkdb.com/) ORM based on [gorethink](https://github.com/GoRethink/gorethink)
 
+![GoRethink Logo](https://raw.github.com/wiki/gorethink/gorethink/gopher-and-thinker-s.png "Golang Gopher and RethinkDB Thinker")
+
 - Components
     - [Connect](https://github.com/loeffel-io/take#component-connect)
         - [Basic Connection](https://github.com/loeffel-io/take#basic-connection)
