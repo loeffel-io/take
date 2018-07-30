@@ -265,7 +265,7 @@ import (
 var databaseSession *r.Session
 
 func main(){
-	user := take.User{
+    user := take.User{
         ID:             "username",
         Password:       "password",
         Permissions:    take.UserPermissions{
