@@ -8,6 +8,7 @@ import (
 	"log"
 )
 
+// Connection
 type Connection struct {
 	Address    string
 	Database   string
@@ -19,6 +20,7 @@ type Connection struct {
 	MaxOpen    int
 }
 
+// Connect to database and retrieve session
 func Connect(connection Connection) *r.Session {
 	var connectOpts = r.ConnectOpts{
 		Address:  connection.Address,
