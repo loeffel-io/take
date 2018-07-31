@@ -1,5 +1,6 @@
 # take
 
+[![Build Status](https://travis-ci.com/loeffel-io/take.svg?branch=master)](https://travis-ci.com/loeffel-io/take)
 [![Go Report Card](https://goreportcard.com/badge/github.com/loeffel-io/take)](https://goreportcard.com/report/github.com/loeffel-io/take)
 
 [WIP] Simple [RethinkDB](https://www.rethinkdb.com/) ORM based on [gorethink](https://github.com/GoRethink/gorethink)
