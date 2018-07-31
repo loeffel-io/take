@@ -1,5 +1,6 @@
 # take
 
+[![GoDoc](https://godoc.org/github.com/loeffel-io/take?status.svg)](https://godoc.org/github.com/loeffel-io/take)
 [![Build Status](https://travis-ci.com/loeffel-io/take.svg?branch=master)](https://travis-ci.com/loeffel-io/take)
 [![Go Report Card](https://goreportcard.com/badge/github.com/loeffel-io/take)](https://goreportcard.com/report/github.com/loeffel-io/take)
 
