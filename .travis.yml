@@ -14,3 +14,6 @@ script:
   - GOOS=linux GOARCH=amd64 go build
   - go test -v -race -coverprofile=coverage.txt -covermode=atomic ./...
   - gometalinter --config=.gometalinter.json --deadline=60s
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash) -t 8e1d9660-c54a-4de9-ab92-b05ea7cd441c
