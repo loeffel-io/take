@@ -1,0 +1,16 @@
+language: go
+
+go:
+  - "1.10.x"
+
+addons:
+  rethinkdb: '2.3.4'
+
+before_script:
+  - go get -u github.com/alecthomas/gometalinter
+  - gometalinter --install
+
+script:
+  - GOOS=linux GOARCH=amd64 go build
+  - go test -v -race -coverprofile=coverage.txt -covermode=atomic ./...
+  - gometalinter --config=.gometalinter.json --deadline=60s
