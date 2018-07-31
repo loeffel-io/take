@@ -6,21 +6,21 @@ import (
 	"log"
 )
 
-// Database user
+// User
 type User struct {
 	ID          string          `gorethink:"id"`
 	Password    string          `gorethink:"password"`
 	Permissions UserPermissions `gorethink:"-"`
 }
 
-// Database user permissions
+// UserPermissions sets user permissions for the current database
 type UserPermissions struct {
 	Read   bool
 	Write  bool
 	Config bool
 }
 
-// Setup user
+// SetupUser creates a new database user
 func SetupUser(user User, session *r.Session) {
 	err := r.DB(rethinkDatabase).Table(rethinkUserTable).Insert(user, r.InsertOpts{Conflict: "update"}).Exec(session)
 
