@@ -6,6 +6,7 @@ import (
 	"log"
 )
 
+// Check if table exists
 func TableExists(table string, session *r.Session) bool {
 	var exists bool
 	res, err := r.TableList().Contains(table).Run(session)
@@ -23,6 +24,7 @@ func TableExists(table string, session *r.Session) bool {
 	return exists
 }
 
+// Creates tables
 func TablesCreate(tables []string, session *r.Session) {
 	for _, table := range tables {
 		if TableExists(table, session) {

@@ -6,6 +6,7 @@ import (
 	"log"
 )
 
+// Insert data
 func Insert(table string, data interface{}, session *r.Session) interface{} {
 	err := r.Table(table).Insert(data).Exec(session)
 
@@ -17,6 +18,7 @@ func Insert(table string, data interface{}, session *r.Session) interface{} {
 	return data
 }
 
+// Insert many data
 func InsertMany(table string, data []interface{}, session *r.Session) interface{} {
 	err := r.Table(table).Insert(data).Exec(session)
 
@@ -28,6 +30,7 @@ func InsertMany(table string, data []interface{}, session *r.Session) interface{
 	return data
 }
 
+// Insert or update data
 func InsertOrUpdate(table string, data interface{}, session *r.Session) interface{} {
 	err := r.Table(table).Insert(data, r.InsertOpts{Conflict: "update"}).Exec(session)
 
@@ -39,6 +42,7 @@ func InsertOrUpdate(table string, data interface{}, session *r.Session) interfac
 	return data
 }
 
+// Insert or update many data
 func InsertOrUpdateMany(table string, data []interface{}, session *r.Session) interface{} {
 	err := r.Table(table).Insert(data, r.InsertOpts{Conflict: "update"}).Exec(session)
 

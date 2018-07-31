@@ -6,6 +6,7 @@ import (
 	"log"
 )
 
+// Check if database exists
 func DatabaseExists(table string, session *r.Session) bool {
 	var exists bool
 	res, err := r.DBList().Contains(table).Run(session)
@@ -23,6 +24,7 @@ func DatabaseExists(table string, session *r.Session) bool {
 	return exists
 }
 
+// Creates a new database
 func DatabaseCreate(database string, session *r.Session) {
 	if DatabaseExists(database, session) {
 		return
