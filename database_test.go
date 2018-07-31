@@ -41,4 +41,5 @@ func TestDatabaseCreate(t *testing.T) {
 	session = connectWithDatabase()
 
 	assert.Equal(t, true, session.IsConnected(), "Should be connected to specific database")
+	assert.Equal(t, "test", session.Database(), "Database name should be test")
 }
