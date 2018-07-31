@@ -29,7 +29,7 @@ func connectWithDatabase() *r.Session {
 
 func TestDatabaseCreate(t *testing.T) {
 	// Connect without database
-	session := connectWithDatabase()
+	session := connectWithoutDatabase()
 
 	// Create test database
 	DatabaseCreate("test", session)
