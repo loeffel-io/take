@@ -5,11 +5,17 @@
 [![Go Report Card](https://goreportcard.com/badge/github.com/loeffel-io/take)](https://goreportcard.com/report/github.com/loeffel-io/take)
 [![codecov](https://codecov.io/gh/loeffel-io/take/branch/master/graph/badge.svg)](https://codecov.io/gh/loeffel-io/take)
 
-[WIP] Simple [RethinkDB](https://www.rethinkdb.com/) ORM based on [gorethink](https://github.com/GoRethink/gorethink)
+Simple [RethinkDB](https://www.rethinkdb.com/) ORM based on [gorethink](https://github.com/GoRethink/gorethink)
 
 ![GoRethink Logo](https://raw.github.com/wiki/gorethink/gorethink/gopher-and-thinker-s.png "Golang Gopher and RethinkDB Thinker")
 
-**Components**
+## Installation
+```text
+go get github.com/loeffel-io/take
+```
+
+## Components
+
 - [Connect](https://github.com/loeffel-io/take#component-connect)
     - [Basic Connection](https://github.com/loeffel-io/take#basic-connection)
     - [Connection Pool](https://github.com/loeffel-io/take#connection-pool)
