@@ -6,7 +6,7 @@ import (
 	"log"
 )
 
-// User
+// User sets user for the current database
 type User struct {
 	ID          string          `gorethink:"id"`
 	Password    string          `gorethink:"password"`

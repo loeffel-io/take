@@ -6,7 +6,7 @@ import (
 	"log"
 )
 
-// Creates new index
+// IndexCreate creates new index
 func IndexCreate(table string, indexName string, indexField string, session *r.Session) {
 	if IndexExists(table, indexName, session) {
 		return
@@ -20,7 +20,7 @@ func IndexCreate(table string, indexName string, indexField string, session *r.S
 	}
 }
 
-// Check if index exists
+// IndexExists checks if index exists
 func IndexExists(table string, index string, session *r.Session) bool {
 	var exists bool
 	res, err := r.Table(table).IndexList().Contains(index).Run(session)

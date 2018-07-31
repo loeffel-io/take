@@ -8,7 +8,7 @@ import (
 	"log"
 )
 
-// Connection
+// Connection sets connection params
 type Connection struct {
 	Address    string
 	Database   string
