@@ -5,7 +5,7 @@
 [![Go Report Card](https://goreportcard.com/badge/github.com/loeffel-io/take)](https://goreportcard.com/report/github.com/loeffel-io/take)
 [![codecov](https://codecov.io/gh/loeffel-io/take/branch/master/graph/badge.svg)](https://codecov.io/gh/loeffel-io/take)
 
-Simple [RethinkDB](https://www.rethinkdb.com/) ORM based on [gorethink](https://github.com/GoRethink/gorethink)
+Simple [RethinkDB](https://www.rethinkdb.com/) orm-like wrapper based on [gorethink](https://github.com/GoRethink/gorethink)
 
 ![GoRethink Logo](https://raw.github.com/wiki/gorethink/gorethink/gopher-and-thinker-s.png "Golang Gopher and RethinkDB Thinker")
 
