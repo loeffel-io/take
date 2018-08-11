@@ -447,6 +447,27 @@ func main(){
 }
 ```
 
+## Component: Delete
+
+### Delete
+
+Delete single object by id
+
+```go
+package main
+
+import (
+	r "gopkg.in/gorethink/gorethink.v4"
+	"github.com/loeffel-io/take"
+)
+
+var databaseSession *r.Session
+
+func main(){
+	take.Delete("table", "id", databaseSession)
+}
+```
+
 ## Sentry support
 
 This package supports [sentry.io](https://sentry.io) real time error reporting.
