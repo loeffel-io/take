@@ -37,7 +37,9 @@ go get github.com/loeffel-io/take
     - [Insert or update single object](https://github.com/loeffel-io/take#insertorupdate)
     - [Insert or update multiple objects](https://github.com/loeffel-io/take#insertorupdatemany)
 - [Update](https://github.com/loeffel-io/take#component-update)
-    - [Update single object by id](https://github.com/loeffel-io/take#update)                      
+    - [Update single object by id](https://github.com/loeffel-io/take#update)
+- [Delete](https://github.com/loeffel-io/take#component-delete)
+    - [Delete single object by id](https://github.com/loeffel-io/take#delete)                          
 
 ## Component: Connect
 
